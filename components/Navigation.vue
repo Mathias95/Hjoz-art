@@ -1,11 +1,15 @@
 <template>
 	<div>
-		This is the header with navigation	
+		<logo />
 	</div>
 </template>
 
 <script>
+import Logo from '~/components/Logo.vue'
+
 export default {
-	
+  components: {
+    Logo
+  }
 }
 </script>
