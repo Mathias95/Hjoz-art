@@ -1,6 +1,6 @@
 <template>
 	<div>
-		This is the header with navigation	
+		<h1>This is the work page</h1>	
 	</div>
 </template>
 
