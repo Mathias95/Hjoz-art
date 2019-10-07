@@ -1,0 +1,20 @@
+{
+  "name": "Hjoz-art",
+  "version": "1.0.0",
+  "description": "This is a showcase website for Hjoz-art gallery using Nuxt.js and Storyblok cms",
+  "author": "Mathias Jacobsen",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
