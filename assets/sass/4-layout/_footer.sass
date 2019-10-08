@@ -1,0 +1,77 @@
+.footer
+	background-color: $grey-dark-3-color
+	color: $white-color
+	padding: 5rem 0
+
+	@media #{$sm-bp}
+		padding-bottom: 3rem
+
+	@media #{$md-bp}
+		padding-bottom: 2rem
+
+	&__logo
+		color: white !important
+
+	&__description
+		font-size: 1.5rem
+
+	&__contact-list
+		list-style: none
+
+	&__contact-item
+		display: flex
+		align-items: center
+		&:not(:last-child)
+			margin-bottom: 1.2rem
+
+	&__contact-icon
+		margin-right: 1.2rem
+
+	&__contact-info
+		margin-right: .5rem
+
+	&__sitemap
+		list-style: none
+		display: flex
+		align-items: center
+		flex-direction: column
+		border-top: .1rem solid $grey-dark-2-color
+		padding-top: 4rem
+
+		@media #{$sm-bp}
+			flex-direction: row
+			padding-top: 3rem
+
+		@media #{$md-bp}
+			padding-top: 2rem
+
+	&__item
+		&:not(:last-child)
+			margin-bottom: 2.5rem
+		
+		@media #{$sm-bp}
+			&:not(:last-child)
+				margin-right: 3rem
+				margin-bottom: 0rem
+
+		@media #{$md-bp}
+			&:not(:last-child)
+				margin-right: 5rem
+
+		@media #{$lg-bp}
+			&:not(:last-child)
+				margin-right: 7rem
+
+	&__link
+		text-decoration: none
+		color: $white-color
+		text-transform: uppercase
+		font-weight: $medium
+		font-size: 1.5rem
+		transition: all 400ms
+
+		@media #{$sm-bp}
+			font-size: 1.3rem
+
+		&:hover
+			color: $primary-color

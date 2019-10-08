@@ -1,7 +1,7 @@
 <template>
-	<div>
-		This is the back to top button
-	</div>
+	<button class="top">
+		<i class="material-icons top__icon">keyboard_arrow_up</i>
+	</button>
 </template>
 
 <script>
@@ -9,7 +9,3 @@ export default {
 
 }
 </script>
-
-<style>
-
-</style>
