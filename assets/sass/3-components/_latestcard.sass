@@ -1,7 +1,17 @@
 .latest-card
+	display: flex
+	align-items: center
+	justify-content: center
+
 	&:not(:last-child)
 		margin-bottom: 2rem
 
 	@media #{$md-bp}
 		&:not(:last-child)
 			margin-bottom: 0rem
+
+	&__inner
+		box-shadow: $default-shadow
+
+	&__img
+		display: block

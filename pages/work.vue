@@ -2,7 +2,13 @@
 	<div>
 		<SubBanner/>
 		<section class="section-padding-lg">
-
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						
+					</div>
+				</div>
+			</div>
 		</section>	
 	</div>
 </template>

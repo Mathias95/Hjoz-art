@@ -4,7 +4,11 @@
 		<FitfyFiftyLayout/>
 		<section class="latest section-padding-lg">
 			<div class="container">
-				<div class="row justify-content-center"><h2 class="latest__title">Mine seneste malerier</h2></div>
+				<div class="row justify-content-center">
+					<div class="col">
+						<h2 class="latest__title text-center">Mine seneste malerier</h2>
+					</div>
+					</div>
 				<div class="row latest__list">
 					<LatestCard/>
 					<LatestCard/>

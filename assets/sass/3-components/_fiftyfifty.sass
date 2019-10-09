@@ -1,17 +1,37 @@
 .fifty
 
-	&__col
-
-		&--left
-
-		&--right
-			padding: 8rem 0
-			background-color: $grey-light-1-color
-			text-align: center
-
 	&__img
-		display: block
+		background-image: url(~assets/images/subbanner.jpg)
+		background-size: cover
+		background-position: 0rem 0rem, 50% 50%
+		background-repeat: repeat, no-repeat
+		min-height: 40rem
+
+	&__text-wrapper
+		background-color: $grey-light-1-color
+		padding-top: 8rem
+		padding-bottom: 8rem
+		padding-left: 7vw !important
+		padding-right: 7vw !important
+		text-align: center
+
+		@media #{$lg-bp}
+			text-align: left
+
+		@media #{$xl-bp}
+			padding-top: 10rem
+			padding-bottom: 10rem
+			padding-left: 7.5vw !important
+			padding-right: 7.5vw !important
+
+		@media #{$xxl-bp}
+			padding-top: 18rem
+			padding-bottom: 18rem 
 
 	&__title
+		margin-bottom: 3rem
 
 	&__text
+		margin-bottom: 5rem
+		font-size: 1.5rem
+		line-height: 3.2rem
