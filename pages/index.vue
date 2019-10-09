@@ -4,14 +4,14 @@
 		<FitfyFiftyLayout/>
 		<section class="latest section-padding-lg">
 			<div class="container">
-				<div class="row justify-content-center"><h2>Mine seneste malerier</h2></div>
-				<div class="row">
-					<div class="col-12 col-md-4"><LatestCard/></div>
-					<div class="col-12 col-md-4"><LatestCard/></div>
-					<div class="col-12 col-md-4"><LatestCard/></div>
+				<div class="row justify-content-center"><h2 class="latest__title">Mine seneste malerier</h2></div>
+				<div class="row latest__list">
+					<LatestCard/>
+					<LatestCard/>
+					<LatestCard/>
 				</div>
 				<div class="row justify-content-center">
-					<nuxt-link to="">Se flere malerier</nuxt-link>
+					<nuxt-link to="" class="btn btn-main">Se flere malerier</nuxt-link>
 				</div>
 			</div>
 		</section>	

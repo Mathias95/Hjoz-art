@@ -1,6 +1,6 @@
 <template>
-	<div>
-		this is a card
+	<div class="col-12 col-md-4 latest-card">
+		this is a test
 	</div>
 </template>
 
