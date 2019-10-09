@@ -1,11 +1,18 @@
 <template>
 	<div>
-		<h1>This is the work page</h1>	
+		<SubBanner/>
+		<section class="section-padding-lg">
+
+		</section>	
 	</div>
 </template>
 
 <script>
+import SubBanner from '~/components/SubBanner.vue'
+
 export default {
-	
+  components: {
+    SubBanner
+  }
 }
 </script>

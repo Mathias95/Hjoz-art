@@ -1,4 +1,104 @@
-.header
+.nav
 	background-color: $white-color
 	color: $black-color
 	box-shadow: $medium-shadow
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	z-index: 1
+
+	@media #{$lg-bp}
+		min-height: 10rem
+		display: flex
+		align-items: stretch
+
+	&__wrapper
+		@media #{$lg-bp}
+			display: flex
+
+	&__brand
+		display: flex
+		align-items: center
+		padding: 2rem 0
+
+		@media #{$lg-bp}
+			padding: 0
+
+	&__hamburger
+		cursor: pointer
+		display: block
+		margin-left: auto
+		width: 5rem
+		height: 5rem
+		background-color: transparent
+		border: 0
+
+		@media #{$lg-bp}
+			display: none
+
+	&__line
+
+	&__menu
+		display: none
+
+		@media #{$lg-bp}
+			display: flex
+			align-items: stretch
+			flex-grow: 1
+			flex-shrink: 0
+
+	&__list
+		list-style: none
+		padding: 1rem 0
+
+		@media #{$lg-bp}
+			display: flex
+			align-items: stretch
+			justify-content: flex-end
+			margin-left: auto
+			padding: 0
+
+	&__item
+		padding: 1rem 0rem
+		
+		@media #{$lg-bp}
+			padding: 0
+			display: flex
+			align-items: stretch
+			position: relative
+
+		// 	&:not(:last-child)
+		// 		margin-right: 6rem
+
+		// @media #{$xl-bp}
+		// 	&:not(:last-child)
+		// 		margin-right: 7rem	
+
+		.nuxt-link-exact-active
+				color: $primary-color
+				
+				@media #{$lg-bp}
+					@include menu-hover
+
+	&__link
+		color: $black-color
+		font-size: 1.6rem
+		text-decoration: none
+		transition: all 400ms
+		display: flex
+		align-items: center
+		position: relative
+
+		@media #{$lg-bp}
+			padding: 3rem
+
+		@media #{$xl-bp}
+			padding: 3rem 3.50rem
+
+		&:hover
+			color: $primary-color
+			
+			@media #{$lg-bp}
+
+				@include menu-hover
