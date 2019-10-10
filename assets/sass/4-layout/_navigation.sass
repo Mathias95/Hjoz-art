@@ -1,18 +1,18 @@
 .nav
 	background-color: $white-color
 	color: $black-color
-	//box-shadow: $medium-shadow
-	position: absolute
+	box-shadow: $medium-shadow
+	//position: absolute
+	position: relative
 	top: 0
 	right: 0
 	left: 0
 	z-index: 1
-	height: 7rem
 
 	@media #{$lg-bp}
-		min-height: 10rem
 		display: flex
 		align-items: stretch
+		min-height: 10rem
 
 	&__wrapper
 		@media #{$lg-bp}
@@ -34,11 +34,26 @@
 		height: 5rem
 		background-color: transparent
 		border: 0
+		position: relative
 
 		@media #{$lg-bp}
 			display: none
 
 	&__line
+		position: absolute
+		top: 50%
+		left: 50%
+		height: .2rem
+		width: 3rem
+		margin-left: -1.5rem
+		background-color: $black-color
+		display: block
+
+		&:nth-child(1)
+			margin-top: -.8rem
+
+		&:nth-child(3)
+			margin-top: .8rem
 
 	&__menu
 		display: none

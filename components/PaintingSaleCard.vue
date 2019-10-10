@@ -1,7 +1,7 @@
 <template>
   <div class="painting text-center">
-		<div class="painting__img-wrapper">
-			<img class="painting__img mb-20" src="~assets/images/saleimg.jpg" alt />
+		<div class="painting__img-wrapper mb-20">
+			<img class="painting__img" src="~assets/images/saleimg.jpg" alt />
 		</div>
     <div class="painting__info">
 			<span class="painting__size">40x50 cm</span>

@@ -9,13 +9,25 @@
 						<h2 class="latest__title heading-1 heading-1--border text-center">Mine seneste malerier</h2>
 					</div>
 					</div>
-				<div class="row latest__list">
-					<LatestCard/>
-					<LatestCard/>
-					<LatestCard/>
+				<div class="row flex-wrap latest__list">
+					<div class="col-6 col-md-4 latest-card">
+						<div class="latest-card__inner">
+							<img class="latest-card__img" src="~assets/images/latest-img.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-6 col-md-4 latest-card">
+						<div class="latest-card__inner">
+							<img class="latest-card__img" src="~assets/images/work-img.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-6 col-md-4 latest-card">
+						<div class="latest-card__inner">
+							<img class="latest-card__img" src="~assets/images/test-1.jpg" alt="">
+						</div>
+					</div>
 				</div>
 				<div class="row justify-content-center">
-					<nuxt-link to="" class="btn btn-main">Se flere malerier</nuxt-link>
+					<nuxt-link to="" class="btn btn-main">Se flere malerier<i class="material-icons">keyboard_arrow_right</i></nuxt-link>
 				</div>
 			</div>
 		</section>	

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="site">
 		<Navigation/>
-    <nuxt />
+    <nuxt/>
 		<section class="bottom">
 			<div class="bottom__bg"></div>
 		</section>

@@ -4,7 +4,7 @@
 		<section class="sale section-padding-lg">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-sm-6 col-lg-4">
+					<div class="col-6 col-md-4 sale__card-wrapper">
 						<PaintingSaleCard/>				
 					</div>
 				</div>

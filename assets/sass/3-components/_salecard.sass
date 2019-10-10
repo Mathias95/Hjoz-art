@@ -1,9 +1,20 @@
 .painting
 
+	&__img-wrapper
+		transition: all 400ms
+		cursor: pointer
+		max-height: 28.50rem
+		@include box-height
+
+		&:hover
+			transform: translateY(-.5rem)
+
 	&__img
 		display: block
 		box-shadow: $default-shadow
 		width: 100%
+		height: 100%
+		object-fit: cover
 
 	&__info
 

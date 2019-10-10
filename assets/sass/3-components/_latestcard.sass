@@ -1,5 +1,8 @@
 .latest-card
 
+	@media only screen and (max-width: 430px)
+		min-width: 100%
+
 	&:not(:last-child)
 		margin-bottom: 2rem
 
@@ -9,7 +12,12 @@
 
 	&__inner
 		box-shadow: $default-shadow
+		@include box-height
 
 	&__img
 		display: block
 		width: 100%
+		height: 100%
+		object-fit: cover
+		
+

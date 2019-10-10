@@ -5,16 +5,18 @@
 .heading-1
 	@extend %heading
 	font-size: 2.4rem
-	line-height: 3.5rem
+	line-height: 1.3
 	color: $grey-dark-1-color
 	text-transform: uppercase
 	font-weight: $medium
 	position: relative
 	letter-spacing: .2rem
 
+	@media #{$md-bp}
+		font-size: 3rem
+
 	@media #{$lg-bp}
 		font-size: 3.4rem
-		line-height: 1.2
 
 	@media #{$xl-bp}
 		font-size: 4rem
@@ -53,12 +55,11 @@
 .title-1
 	@extend %title
 	font-size: 3.50rem
-	line-height: 1
+	line-height: 1.2
 	text-transform: capitalize
 
 	@media #{$md-bp}
 		font-size: 4.50rem
-		line-height: 1.2
 
 	@media #{$xl-bp}
 		font-size: 7rem

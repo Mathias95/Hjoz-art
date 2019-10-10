@@ -1,5 +1,4 @@
 @mixin menu-hover
-	
 	&:before
 		content: ""
 		position: absolute
@@ -12,14 +11,32 @@
 		z-index: 1
 		transition: all 400ms
 
+
 @mixin spacing-medium
 	margin-bottom: 2.5rem
 
 	@media #{$md-bp}
 		margin-bottom: 5rem
 
+
 @mixin spacing-large
 	margin-bottom: 4rem
 
 	@media #{$md-bp}
 		margin-bottom: 8rem
+
+
+@mixin box-height
+	height: 23.50rem
+
+	@media only screen and (max-width: 430px)
+		height: 28.50rem
+
+	@media #{$md-bp}
+		height: 18.50rem
+
+	@media #{$lg-bp}
+		height: 25.50rem
+
+	@media #{$xl-bp}
+		height: 28.50rem
