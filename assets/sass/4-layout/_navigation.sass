@@ -1,12 +1,13 @@
 .nav
 	background-color: $white-color
 	color: $black-color
-	box-shadow: $medium-shadow
-	position: fixed
+	//box-shadow: $medium-shadow
+	position: absolute
 	top: 0
 	right: 0
 	left: 0
 	z-index: 1
+	height: 7rem
 
 	@media #{$lg-bp}
 		min-height: 10rem
@@ -20,7 +21,7 @@
 	&__brand
 		display: flex
 		align-items: center
-		padding: 2rem 0
+		padding: 1rem 0
 
 		@media #{$lg-bp}
 			padding: 0

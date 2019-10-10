@@ -11,3 +11,15 @@
 		left: 0
 		z-index: 1
 		transition: all 400ms
+
+@mixin spacing-medium
+	margin-bottom: 2.5rem
+
+	@media #{$md-bp}
+		margin-bottom: 5rem
+
+@mixin spacing-large
+	margin-bottom: 4rem
+
+	@media #{$md-bp}
+		margin-bottom: 8rem

@@ -10,7 +10,7 @@
 					<div class="col-12 col-lg-5 col-xl-4 mb-40">
 						<ul class="footer__contact-list">
 							<li class="footer__contact-item">Heidi Jozwiak</li>
-							<li class="footer__contact-item"><i class="material-icons footer__contact-icon">room</i><span class="footer__contact-info">Adresse:</span>Harrevænget 6, 4200 Slagelse</li>
+							<li class="footer__contact-item"><i class="material-icons footer__contact-icon">room</i><span class="footer__contact-info">Adresse:</span>Harrevænget 7, 4200 Slagelse</li>
 							<li class="footer__contact-item"><i class="material-icons footer__contact-icon">local_phone</i><span class="footer__contact-info">Telefon:</span>+45 12 34 56 78</li>
 							<li class="footer__contact-item"><i class="material-icons footer__contact-icon">mail</i><span class="footer__contact-info">Mail:</span>heidi@jozwiak.dk</li>
 						</ul>

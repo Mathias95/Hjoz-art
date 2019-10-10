@@ -2,8 +2,8 @@
   <div>
 		<Navigation/>
     <nuxt />
-		<section class="bottom-bg">
-			This is where the bottom background goes
+		<section class="bottom">
+			<div class="bottom__bg"></div>
 		</section>
 		<BackTop/>
 		<Footer/>

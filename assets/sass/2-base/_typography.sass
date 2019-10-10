@@ -1,11 +1,87 @@
 %heading
 	font-family: $primary-font
-	font-weight: 400
+	font-weight: $regular
 	
 .heading-1
+	@extend %heading
+	font-size: 2.4rem
+	line-height: 3.5rem
+	color: $grey-dark-1-color
+	text-transform: uppercase
+	font-weight: $medium
+	position: relative
+	letter-spacing: .2rem
+
+	@media #{$lg-bp}
+		font-size: 3.4rem
+		line-height: 1.2
+
+	@media #{$xl-bp}
+		font-size: 4rem
+
+	&--border
+		padding-bottom: 2rem
+
+		@media #{$lg-bp}
+			padding-bottom: 3rem
+
+		&::after
+			content: ""
+			position: absolute
+			width: 4rem
+			height: .3rem
+			background-color: $primary-color
+			bottom: 0
+			left: 0
+			right: 0
+			margin: 0 auto
+
+			@media #{$lg-bp}
+				width: 6.50rem
+				height: .5rem
 
 .heading-2
 
 .heading-3
 
 .heading-4
+
+%title
+	font-family: $display-font
+	font-weight: $bold
+
+.title-1
+	@extend %title
+	font-size: 3.50rem
+	line-height: 1
+	text-transform: capitalize
+
+	@media #{$md-bp}
+		font-size: 4.50rem
+		line-height: 1.2
+
+	@media #{$xl-bp}
+		font-size: 7rem
+
+	&--light
+		color: $white-color
+
+	&--dark
+		color: $grey-dark-1-color
+
+.title-2
+
+%text
+	font-family: $primary-font
+	font-weight: $regular
+
+.text-main
+	@extend %text
+	font-size: 1.5rem
+	line-height: 3rem
+
+	&--light
+		color: $grey-light-3-color
+
+	&--dark
+		color: $grey-dark-3-color

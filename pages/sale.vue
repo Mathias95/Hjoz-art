@@ -4,8 +4,8 @@
 		<section class="sale section-padding-lg">
 			<div class="container">
 				<div class="row">
-					<div class="col">
-
+					<div class="col-12 col-sm-6 col-lg-4">
+						<PaintingSaleCard/>				
 					</div>
 				</div>
 			</div>
@@ -15,10 +15,12 @@
 
 <script>
 import SubBanner from '~/components/SubBanner.vue'
+import PaintingSaleCard from '~/components/PaintingSaleCard.vue'
 
 export default {
   components: {
-    SubBanner
+		SubBanner,
+		PaintingSaleCard
   }
 }
 </script>

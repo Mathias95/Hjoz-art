@@ -1,14 +1,25 @@
 .latest
 
 	&__title
-		margin-bottom: 3rem
-
-		@media #{$md-bp}
-			margin-bottom: 8rem
+		@include spacing-large
 
 	&__list
 		margin-bottom: 4rem
 
 		@media #{$md-bp}
 			margin-bottom: 8rem
-	
+.bottom
+	position: relative
+
+	&__bg
+		background-image: url(~assets/images/bottom-bg-img.jpg)
+		position: absolute
+		left: 0%
+		top: auto
+		right: 0%
+		bottom: 0%
+		z-index: -1
+		height: 60vh
+		background-size: cover
+		background-position: 50% 50%
+		background-repeat: no-repeat
