@@ -7,6 +7,40 @@
 	background-position: 0rem 0rem, 50% 50%
 	background-repeat: repeat, no-repeat
 
+	&__title
+		font-size: 4.5rem
+		font-weight: $medium
+		text-transform: capitalize
+		color: $grey-dark-1-color
+		line-height: 1.2
+		text-align: center
+		margin-bottom: 2rem
+
+		@media #{$sm-bp}
+			font-size: 5rem
+
+		@media #{$md-bp}
+			font-size: 6rem
+
+		@media #{$lg-bp}
+			font-size: 6.5rem
+			text-align: left
+
+		@media #{$xl-bp}
+			font-size: 7rem
+
+		@media only screen and (max-width: 430px)
+			font-size: 3.8rem
+
+	&__text
+		color: $grey-dark-2-color
+		margin-bottom: 4rem
+		text-align: center
+
+		@media #{$lg-bp}
+			margin-bottom: 0rem
+			text-align: left
+
 	&__right
 
 	&__right-img

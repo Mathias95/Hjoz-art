@@ -6,7 +6,7 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col">
-						<h2 class="latest__title heading-1 heading-1--border text-center">Mine seneste malerier</h2>
+						<h2 class="latest__title heading-1 heading-1--border text-center mx-auto">Mine seneste malerier</h2>
 					</div>
 					</div>
 				<div class="row flex-wrap latest__list">

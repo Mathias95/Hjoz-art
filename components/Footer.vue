@@ -2,12 +2,12 @@
 	<div id="footer">
 		<footer class="footer">
 			<div class="container">
-				<div class="row justify-content-between">
-					<div class="col-12 col-lg-6 col-xl-5 mb-50">
+				<div class="row footer__row">
+					<div class="col-12 col-lg-6 col-xl-4 mr-auto footer__logo-wrapper">
 						<Logo class="footer__logo mb-25"/>
 						<p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
 					</div>
-					<div class="col-12 col-lg-5 col-xl-4 mb-40">
+					<div class="col-12 col-lg-5 col-xl-4 footer__contact-wrapper">
 						<ul class="footer__contact-list">
 							<li class="footer__contact-item">Heidi Jozwiak</li>
 							<li class="footer__contact-item"><i class="material-icons footer__contact-icon">room</i><span class="footer__contact-info">Adresse:</span>Harrevænget 7, 4200 Slagelse</li>

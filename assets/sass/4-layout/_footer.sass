@@ -13,11 +13,29 @@
 	@media #{$md-bp}
 		padding-bottom: 2rem
 
+	&__row
+		align-items: flex-end
+
+		@media #{$lg-bp}
+			margin-bottom: 5rem
+
+	&__logo-wrapper
+		margin-bottom: 5rem
+		
+		@media #{$lg-bp}
+			margin-bottom: 0rem
+
 	&__logo
 		color: white !important
 
 	&__description
 		font-size: 1.5rem
+
+	&__contact-wrapper
+		margin-bottom: 4rem
+
+		@media #{$lg-bp}
+			margin-bottom: 0rem
 
 	&__contact-list
 		list-style: none
@@ -25,6 +43,8 @@
 	&__contact-item
 		display: flex
 		align-items: center
+		line-height: 1
+
 		&:not(:last-child)
 			margin-bottom: 1.2rem
 

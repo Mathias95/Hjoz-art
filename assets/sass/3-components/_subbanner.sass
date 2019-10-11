@@ -1,8 +1,14 @@
 .subbanner
-	height: 60vh
+	height: 35vh
 	display: flex
 	align-items: center
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(~assets/images/subbanner.jpg)
 	background-size: auto, cover
 	background-position: 0rem 0rem, 50% 50%
 	background-repeat: repeat, no-repeat
+
+	@media #{$sm-bp}
+		height: 40vh
+		
+	@media #{$lg-bp}
+		height: 60vh

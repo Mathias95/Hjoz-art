@@ -1,0 +1,40 @@
+.contact
+
+	&__img
+		box-shadow: $medium-shadow
+		display: block
+
+	&__col-text
+		margin-bottom: 5rem
+
+		@media #{$md-bp}
+			margin-bottom: 0rem
+
+	&__title
+		margin-bottom: 3.5rem
+
+	&__list
+		list-style: none
+		font-size: 1.5rem
+
+	&__name
+		text-transform: uppercase
+		font-weight: $medium
+		color: $primary-color
+		margin-bottom: 1rem
+		display: inline-block
+
+	&__item
+		display: flex
+		align-items: center
+		line-height: 1
+		color: $grey-dark-1-color
+
+		&:not(:last-child)
+			margin-bottom: 1rem
+
+	&__item-icon
+		margin-right: 1.2rem
+
+	&__item-info
+		margin-right: .5rem

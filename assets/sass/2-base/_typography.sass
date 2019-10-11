@@ -1,3 +1,4 @@
+//Main headline stylings	
 %heading
 	font-family: $primary-font
 	font-weight: $regular
@@ -12,6 +13,12 @@
 	position: relative
 	letter-spacing: .2rem
 
+	&--light
+		color: $white-color
+
+	&--dark
+		color: $grey-dark-1-color
+
 	@media #{$md-bp}
 		font-size: 3rem
 
@@ -23,6 +30,7 @@
 
 	&--border
 		padding-bottom: 2rem
+		max-width: 70%
 
 		@media #{$lg-bp}
 			padding-bottom: 3rem
@@ -43,15 +51,35 @@
 				height: .5rem
 
 .heading-2
+	@extend %heading
+	font-family: $display-font
+	font-weight: $bold
+	color: $grey-dark-1-color
+	font-size: 5rem
+	line-height: 1.2
+	position: relative
+
+	@media #{$lg-bp}
+		font-size: 6rem
+
+	@media #{$xl-bp}
+		font-size: 8rem
+
+	&--element
+		content: ""
+		position: absolute
 
 .heading-3
 
 .heading-4
 
+
 %title
 	font-family: $display-font
 	font-weight: $bold
 
+
+//Banner and Subbanner styling
 .title-1
 	@extend %title
 	font-size: 3.50rem
@@ -60,6 +88,9 @@
 
 	@media #{$md-bp}
 		font-size: 4.50rem
+
+	@media #{$lg-bp}
+		font-size: 5.50rem
 
 	@media #{$xl-bp}
 		font-size: 7rem
@@ -70,8 +101,8 @@
 	&--dark
 		color: $grey-dark-1-color
 
-.title-2
 
+//Main paragraph styling
 %text
 	font-family: $primary-font
 	font-weight: $regular
@@ -80,6 +111,9 @@
 	@extend %text
 	font-size: 1.5rem
 	line-height: 3rem
+
+	@media #{$lg-bp}
+		font-size: 1.6rem
 
 	&--light
 		color: $grey-light-3-color
