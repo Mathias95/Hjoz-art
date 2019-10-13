@@ -1,16 +1,37 @@
 <template>
   <div class="painting text-center">
-		<div class="painting__img-wrapper mb-20">
-			<img class="painting__img" src="~assets/images/saleimg.jpg" alt />
+		<div :style="{backgroundImage: 'url(' + thumbnailImage + ')'}" class="painting__img-wrapper mb-20"></div>
+		<div class="painting__info">
+			<span class="painting__size">{{ sizing }}</span>
+			<h3 class="painting__title">{{ title }}</h3>
+			<span class="painting__price">{{ pricing }}</span>
 		</div>
-    <div class="painting__info">
-			<span class="painting__size">40x50 cm</span>
-			<h3 class="painting__title">Udvalg af maleri</h3>
-			<span class="painting__price">Pris pr. stk. 800,-</span>
-		</div>
-  </div>
+	</div>
 </template>
 
 <script>
-export default {};
+export default {
+	props: {
+		thumbnailImage: {
+			type: String,
+			required: true
+		},
+		title: {
+			type: String,
+			required: true
+		},
+		sizing: {
+			type: String,
+			required: true
+		},
+		pricing: {
+			type: String,
+			required: true
+		},
+		id: {
+			type: String,
+			required: true
+		}
+	}
+};
 </script>

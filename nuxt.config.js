@@ -30,6 +30,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+		'~/plugins/components'
   ],
   /*
   ** Nuxt.js modules
@@ -37,7 +38,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
 		'@nuxtjs/axios',
-		'nuxt-material-design-icons'
+		'nuxt-material-design-icons',
+		['storyblok-nuxt', {accessToken: 'i5r4OfCiaaacBIXBkWRRIQtt', cacheProvider: 'memory'}]
 	],
   /*
   ** Axios module configuration

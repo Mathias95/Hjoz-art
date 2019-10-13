@@ -15,94 +15,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="work__grid">
-						<div class="col-12">
-							<div class="work__img-wrapper">
-								<div class="work__img-overlay">
-									<h3 class="work__img-title text-center">Navn på maleri</h3>
-								</div>
-								<img src="~assets/images/work-img.jpg" alt="" class="work__img">
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="work__img-wrapper">
-								<div class="work__img-overlay">
-									<h3 class="work__img-title text-center">Navn på maleri</h3>
-								</div>
-								<img src="~assets/images/test-1.jpg" alt="" class="work__img">
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="work__img-wrapper">
-								<div class="work__img-overlay">
-									<h3 class="work__img-title text-center">Navn på maleri</h3>
-								</div>
-								<img src="~assets/images/work-img.jpg" alt="" class="work__img">
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="work__img-wrapper">
-								<div class="work__img-overlay">
-									<h3 class="work__img-title text-center">Navn på maleri</h3>
-								</div>
-								<img src="~assets/images/test-2.jpg" alt="" class="work__img">
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="work__img-wrapper">
-								<div class="work__img-overlay">
-									<h3 class="work__img-title text-center">Navn på maleri</h3>
-								</div>
-								<img src="~assets/images/work-img.jpg" alt="" class="work__img">
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="work__img-wrapper">
-								<div class="work__img-overlay">
-									<h3 class="work__img-title text-center">Navn på maleri</h3>
-								</div>
-								<img src="~assets/images/test-2.jpg" alt="" class="work__img">
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="work__img-wrapper">
-								<div class="work__img-overlay">
-									<h3 class="work__img-title text-center">Navn på maleri</h3>
-								</div>
-								<img src="~assets/images/work-img.jpg" alt="" class="work__img">
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="work__img-wrapper">
-								<div class="work__img-overlay">
-									<h3 class="work__img-title text-center">Navn på maleri</h3>
-								</div>
-								<img src="~assets/images/work-img.jpg" alt="" class="work__img">
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="work__img-wrapper">
-								<div class="work__img-overlay">
-									<h3 class="work__img-title text-center">Navn på maleri</h3>
-								</div>
-								<img src="~assets/images/work-img.jpg" alt="" class="work__img">
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="work__img-wrapper">
-								<div class="work__img-overlay">
-									<h3 class="work__img-title text-center">Navn på maleri</h3>
-								</div>
-								<img src="~assets/images/test-2.jpg" alt="" class="work__img">
-							</div>
+						<div class="col-12" 
+						v-for="work in works"
+						:key="work.id">
+							<WorkCard
+							:workImage="work.paintImg"
+							:workTitle="work.title"
+							:id="work.id"/>
 						</div>
 					</div>
 				</div>
@@ -119,6 +38,47 @@ export default {
   components: {
 		SubBanner,
 		WorkCard
-  }
+	},
+	data(){
+		return {
+			works: [
+				{
+					title: "Navn på maleri 1",
+					paintImg: "https://images.unsplash.com/photo-1570964249954-e387322dd586?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80",
+					id: "one-paint"
+				},
+				{
+					title: "Navn på maleri 2",
+					paintImg: "https://images.unsplash.com/photo-1570948510276-aea76a9a4391?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+					id: "two-paint"
+				},
+				{
+					title: "Navn på maleri 3",
+					paintImg: "https://images.unsplash.com/photo-1569286122346-2a0cef3e7ad8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80",
+					id: "three-paint"
+				},
+				{
+					title: "Navn på maleri 4",
+					paintImg: "https://images.unsplash.com/photo-1570937937487-125575170d69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+					id: "four-paint"
+				},
+				{
+					title: "Navn på maleri 5",
+					paintImg: "https://images.unsplash.com/photo-1558981285-501cd9af9426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+					id: "five-paint"
+				},
+				{
+					title: "Navn på maleri 6",
+					paintImg: "https://images.unsplash.com/photo-1570821806133-55200c3adde3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+					id: "six-paint"
+				},
+				{
+					title: "Navn på maleri 7",
+					paintImg: "https://images.unsplash.com/photo-1556909172-89cf0b24ff02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
+					id: "seven-paint"
+				}
+			]
+		}
+	}
 }
 </script>

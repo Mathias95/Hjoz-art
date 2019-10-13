@@ -1,6 +1,12 @@
 .sale
 
 	&__card-wrapper
+		&:not(:last-child)
+			margin-bottom: 3rem
+		
+		@media #{$xl-bp}
+			&:not(:last-child)
+			margin-bottom: 5rem
 		
 		@media only screen and (max-width: 430px)
 			min-width: 100%
